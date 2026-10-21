@@ -1,0 +1,23 @@
+{
+  "name": "Solstice form study",
+  "file": "solstice-study.glb",
+  "format": "glTF 2.0 binary",
+  "source": "scripts/build-signature-model.mjs",
+  "license": "Original project asset; available for this portfolio demo",
+  "vertices": 9457,
+  "triangles": 18432,
+  "bytes": 414928,
+  "bounds": {
+    "min": [
+      -1.5072118043899536,
+      -1.560893177986145,
+      -0.6483690738677979
+    ],
+    "max": [
+      1.6176156997680664,
+      1.3726588487625122,
+      0.5476803779602051
+    ]
+  },
+  "note": "An authored concept interpretation. Replace with the brand's approved CAD-derived GLB for an exact product match."
+}

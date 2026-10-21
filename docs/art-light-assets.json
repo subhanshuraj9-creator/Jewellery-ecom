@@ -1,0 +1,62 @@
+[
+  {
+    "name": "solstice-ring",
+    "source": "C:\\Users\\Abc\\.codex\\generated_images\\01a1509c-38ba-7120-8c60-70af8b5249cb\\exec-37e09c16-a430-46a2-84c3-5e21e5168650.png",
+    "output": "public/images/art-light/solstice-ring.webp",
+    "width": 1100
+  },
+  {
+    "name": "lune-hoops",
+    "source": "C:\\Users\\Abc\\.codex\\generated_images\\01a1509c-38ba-7120-8c60-70af8b5249cb\\exec-a7b1ce52-3022-45f7-b94a-ee3e79fd4ef5.png",
+    "output": "public/images/art-light/lune-hoops.webp",
+    "width": 1100
+  },
+  {
+    "name": "orbit-necklace",
+    "source": "C:\\Users\\Abc\\.codex\\generated_images\\01a1509c-38ba-7120-8c60-70af8b5249cb\\exec-e91d7269-72e8-49cf-94b4-a29167daead2.png",
+    "output": "public/images/art-light/orbit-pendant.webp",
+    "width": 1100
+  },
+  {
+    "name": "cuff",
+    "source": "C:\\Users\\Abc\\.codex\\generated_images\\01a1509c-38ba-7120-8c60-70af8b5249cb\\exec-fa35d7d1-54c3-4fe2-a0bb-0e7544db24c6.png",
+    "output": "public/images/art-light/serein-cuff.webp",
+    "width": 1100
+  },
+  {
+    "name": "signet",
+    "source": "C:\\Users\\Abc\\.codex\\generated_images\\01a1509c-38ba-7120-8c60-70af8b5249cb\\exec-525c7a97-d5c2-4f59-83d8-f6fac8a2323b.png",
+    "output": "public/images/art-light/forma-signet.webp",
+    "width": 1100
+  },
+  {
+    "name": "pearl-earrings",
+    "source": "C:\\Users\\Abc\\.codex\\generated_images\\01a1509c-38ba-7120-8c60-70af8b5249cb\\exec-499a4c42-fc0c-498a-a092-0db9f44b0a8c.png",
+    "output": "public/images/art-light/baroque-drops.webp",
+    "width": 1100
+  },
+  {
+    "name": "chain",
+    "source": "C:\\Users\\Abc\\.codex\\generated_images\\01a1509c-38ba-7120-8c60-70af8b5249cb\\exec-bb0fce32-f5b2-45d1-95a9-2e023db7c67f.png",
+    "output": "public/images/art-light/lien-bracelet.webp",
+    "width": 1100
+  },
+  {
+    "name": "pendant",
+    "source": "C:\\Users\\Abc\\.codex\\generated_images\\01a1509c-38ba-7120-8c60-70af8b5249cb\\exec-69f13d1f-6f0e-4075-985d-f243ef61d1cc.png",
+    "output": "public/images/art-light/aura-necklace.webp",
+    "width": 1100
+  },
+  {
+    "name": "art-light-campaign",
+    "source": "C:\\Users\\Abc\\.codex\\generated_images\\01a1509c-38ba-7120-8c60-70af8b5249cb\\exec-3bdca788-774f-4f17-954c-e2af02762a7b.png",
+    "output": "public/images/art-light/campaign.webp",
+    "width": 1800
+  },
+  {
+    "name": "art-light-philosophy",
+    "source": "C:\\Users\\Abc\\.codex\\generated_images\\01a1509c-38ba-7120-8c60-70af8b5249cb\\exec-d3e58c4d-5ef4-4b94-807e-8961864f05ef.png",
+    "output": "public/images/art-light/philosophy.webp",
+    "width": 1800
+  }
+]

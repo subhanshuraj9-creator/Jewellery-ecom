@@ -1,0 +1,839 @@
+/* Digital flagship: all refinements are outside the protected hero scene. */
+.editorial-label {
+  color: var(--gold);
+  font: 400 12px/1.5 var(--sans);
+  letter-spacing: 0.045em;
+}
+.header .desktop-nav {
+  gap: clamp(16px, 2.1vw, 30px);
+  font-size: 12px;
+}
+.header-actions {
+  gap: 5px;
+}
+.header-actions svg,
+.mobile-menu svg {
+  stroke-width: 1.4;
+}
+.announcement {
+  letter-spacing: 0.015em;
+}
+
+/* A compact, asymmetric collection spread. */
+.atelier-gallery {
+  padding: 100px 6% 76px;
+}
+.gallery-introduction > .eyebrow {
+  margin-bottom: 20px;
+  text-transform: none;
+  letter-spacing: 0.05em;
+}
+.gallery-introduction h2 {
+  font-size: clamp(38px, 4.2vw, 62px);
+  line-height: 1.15;
+}
+.gallery-introduction > div {
+  align-items: center;
+}
+.gallery-introduction > div > p {
+  max-width: 290px;
+}
+.gallery-floor {
+  column-gap: 5%;
+  row-gap: 55px;
+  margin-top: 62px;
+  align-items: start;
+}
+.work-1 {
+  grid-column: 1 / 6;
+  grid-row: 1;
+}
+.work-2 {
+  grid-column: 8 / 13;
+  grid-row: 1;
+  margin-top: 95px;
+}
+.work-3 {
+  grid-column: 2 / 7;
+  grid-row: 2;
+  margin-top: -30px;
+}
+.work-4 {
+  grid-column: 9 / 13;
+  grid-row: 2;
+  margin-top: 70px;
+}
+.work-1 .gallery-work-image {
+  aspect-ratio: 4 / 4.8;
+}
+.work-2 .gallery-work-image {
+  aspect-ratio: 3 / 4;
+}
+.work-3 .gallery-work-image,
+.work-3 .gallery-portrait {
+  aspect-ratio: 4 / 4.2;
+}
+.work-4 .gallery-work-image {
+  aspect-ratio: 4 / 5.25;
+}
+.work-2 .gallery-image-plane {
+  inset: 0;
+}
+.work-2 .gallery-image-plane img {
+  object-position: center;
+}
+.gallery-work-title {
+  margin-top: 18px;
+}
+.gallery-work-title h3 {
+  font-size: clamp(27px, 2.6vw, 38px);
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+.gallery-work-title > svg {
+  width: 19px;
+  height: 19px;
+}
+.gallery-work-link > p {
+  margin-top: 6px;
+  max-width: 290px;
+  line-height: 1.65;
+}
+.gallery-colophon {
+  margin-top: 54px;
+  padding-top: 24px;
+}
+.gallery-detail {
+  inset: auto auto 18px 18px;
+  width: 28%;
+  aspect-ratio: 1;
+  box-shadow: 0 5px 24px #0003;
+  pointer-events: none;
+}
+.gallery-detail img,
+.gallery-portrait .gallery-detail img {
+  transform: none;
+  object-fit: cover;
+  object-position: center;
+}
+.gallery-work-link:focus-visible .gallery-detail {
+  opacity: 1;
+}
+.gallery-explore {
+  bottom: 18px;
+  right: 18px;
+}
+
+/* The signature piece is a photographic spread, never a pinned scene. */
+.signature-story {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  min-height: 680px;
+  background: #1c1814;
+}
+.signature-photograph {
+  min-height: 680px;
+  position: relative;
+  overflow: hidden;
+  background: #1d1813;
+}
+.signature-photograph > img {
+  object-fit: cover;
+  object-position: 50% 52%;
+}
+.signature-image-caption {
+  position: absolute;
+  bottom: 27px;
+  left: 32px;
+  color: #d1c1aa;
+  font-size: 11px;
+  letter-spacing: 0.035em;
+}
+.signature-information {
+  align-self: center;
+  padding: 75px 14%;
+}
+.signature-information h2 {
+  font: 400 clamp(38px, 4vw, 59px)/1.15 var(--serif);
+  letter-spacing: -0.04em;
+  margin: 22px 0;
+}
+.signature-description {
+  max-width: 310px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.85;
+}
+.signature-specifications {
+  margin: 34px 0 28px;
+  padding: 0;
+}
+.signature-specifications > div {
+  border-top: 1px solid var(--line);
+  padding: 16px 0;
+}
+.signature-specifications dt {
+  color: #e5d7c4;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+.signature-specifications dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+.signature-price {
+  color: #e8d9c2;
+  font-size: 20px;
+}
+.signature-price > span {
+  font-size: 10px;
+  color: var(--muted);
+  margin-left: 5px;
+}
+.signature-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 23px;
+  margin-top: 26px;
+}
+.signature-actions .button {
+  min-width: 150px;
+}
+.signature-actions .text-link {
+  font-size: 12px;
+  gap: 17px;
+}
+
+/* Clear shopping hierarchy with imagery and controls given equal care. */
+.catalog.section-space {
+  padding: 88px 6% 94px;
+}
+.catalog .section-heading {
+  margin-bottom: 32px;
+}
+.catalog .section-heading h2 {
+  font-size: clamp(32px, 3.2vw, 46px);
+  margin-top: 12px;
+}
+.catalog .section-heading .text-link {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.catalog-toolbar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 26px;
+  margin-bottom: 30px;
+}
+.category-tabs {
+  gap: 26px;
+}
+.category-tabs button {
+  font-size: 13px;
+  padding: 17px 0;
+  white-space: nowrap;
+}
+.category-tabs button.active::after {
+  height: 1px;
+  background: #d3bb96;
+}
+.catalog-count {
+  color: var(--muted);
+  font-size: 11px;
+  white-space: nowrap;
+}
+.sort-label select {
+  max-width: 160px;
+  font-size: 12px;
+}
+.product-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 38px 22px;
+}
+.product-visual {
+  position: relative;
+}
+.product-image {
+  aspect-ratio: 4 / 5;
+}
+.product-card:hover .product-image img {
+  transform: scale(1.025);
+}
+.product-title {
+  margin-top: 17px;
+  align-items: baseline;
+  gap: 10px;
+}
+.product-title h3,
+.product-card h3 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.product-title > span {
+  font-size: 13px;
+}
+.product-card > p {
+  margin-top: 5px;
+  font-size: 11px;
+}
+.add-button {
+  padding: 15px 0 11px;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.add-button svg {
+  stroke-width: 1.3;
+}
+.product-badge {
+  font-size: 10px;
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+.quick-view {
+  top: auto;
+  bottom: 12px;
+  right: 12px;
+  padding: 9px 13px;
+  min-height: 38px;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-size: 11px;
+  border-color: #a58b634d;
+  background: #191511f2;
+}
+.product-card:hover .quick-view,
+.product-card:focus-within .quick-view {
+  transform: none;
+}
+.related .product-grid {
+  margin-top: 30px;
+}
+.quick-view-content > img {
+  object-fit: contain;
+  background: #e9e2d6;
+}
+
+/* Portrait, object, detail: each spread has a different photographic role. */
+.becoming-campaign {
+  padding: 64px 6% 66px;
+}
+.campaign-margin {
+  padding-bottom: 32px;
+}
+.campaign-margin > .eyebrow {
+  text-transform: none;
+  letter-spacing: 0.05em;
+}
+.becoming-campaign-layout {
+  grid-template-columns: 1.12fr 1fr;
+  gap: 10%;
+}
+.becoming-portrait {
+  height: 570px;
+}
+.becoming-campaign-copy {
+  padding: 28px 0 0;
+}
+.becoming-campaign-copy h2 {
+  font-size: clamp(38px, 4vw, 60px);
+  line-height: 1.15;
+}
+.becoming-campaign-copy > p {
+  font-size: 14px;
+  line-height: 1.9;
+  max-width: 320px;
+  margin: 25px 0;
+}
+.small-rule {
+  width: 28px;
+  margin-bottom: 27px;
+}
+.campaign-inset {
+  width: 47%;
+  margin: 38px 0 0 auto;
+}
+.campaign-inset > div {
+  aspect-ratio: 1;
+}
+.campaign-inset img {
+  object-position: center;
+  filter: none;
+}
+.atelier-craft {
+  padding: 72px 6% 66px;
+}
+.craft-topline .eyebrow {
+  text-transform: none;
+  letter-spacing: 0.05em;
+}
+.atelier-craft > h2 {
+  font-size: clamp(36px, 3.6vw, 54px);
+  line-height: 1.18;
+  margin-top: 24px;
+}
+.atelier-craft-layout {
+  gap: 10%;
+  margin-top: 42px;
+  align-items: start;
+}
+.craft-macro {
+  margin-top: 0;
+}
+.craft-macro > div {
+  aspect-ratio: 4/4.6;
+}
+.craft-macro img {
+  object-position: center;
+}
+.craft-pullquote {
+  font-size: clamp(27px, 2.5vw, 35px);
+  line-height: 1.3;
+}
+.material-notes {
+  margin-top: 25px;
+}
+.material-notes h3 {
+  font: 400 18px/1.4 var(--sans);
+  letter-spacing: -0.02em;
+}
+.material-notes article {
+  gap: 17px;
+  padding: 21px 0;
+}
+.material-notes p {
+  font-size: 13px;
+}
+.craft-demo-note {
+  margin-top: 38px;
+}
+.care-banner {
+  padding-block: 42px;
+}
+.care-banner h2 {
+  font-size: 30px;
+}
+.care-banner p:not(.eyebrow) {
+  max-width: 72ch;
+}
+.faq {
+  gap: 9%;
+  padding-block: 62px;
+}
+.faq h2 {
+  font-size: 35px;
+  max-width: 320px;
+}
+.faq .eyebrow,
+.care-banner .eyebrow {
+  text-transform: none;
+  letter-spacing: 0.04em;
+}
+.faq-list summary {
+  padding: 22px 0;
+  font-size: 14px;
+}
+
+/* A photographic close followed by the quiet, oversized brand signature. */
+.closing-campaign {
+  display: grid;
+  grid-template-columns: 1.45fr 1fr;
+  min-height: 570px;
+  background: #201a15;
+  overflow: hidden;
+}
+.closing-photograph {
+  position: relative;
+  overflow: hidden;
+  min-height: 570px;
+}
+.closing-photograph > div {
+  position: absolute;
+  inset: -6% 0;
+}
+.closing-photograph img {
+  object-position: 50% 8%;
+  filter: saturate(0.72) brightness(0.78);
+}
+.closing-copy {
+  align-self: center;
+  padding: 70px 15%;
+}
+.closing-copy h2 {
+  font: 400 clamp(40px, 4.5vw, 68px)/1.13 var(--serif);
+  letter-spacing: -0.035em;
+  margin: 25px 0;
+}
+.closing-copy > p:not(.editorial-label) {
+  color: #c9bbaa;
+  font-size: 14px;
+  line-height: 1.9;
+  max-width: 260px;
+  margin-bottom: 30px;
+}
+.atelier-footer {
+  padding-inline: 6%;
+}
+.footer-final-frame {
+  padding: 45px 0 44px;
+  margin-bottom: 48px;
+}
+.final-wordmark {
+  font-size: 17.8vw;
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+  margin: 0 -1%;
+}
+.newsletter .eyebrow {
+  text-transform: none;
+  letter-spacing: 0.04em;
+}
+.atelier-footer .newsletter h2 {
+  font-size: 34px;
+  margin-top: 12px;
+}
+.footer-top {
+  gap: 6%;
+}
+.footer-column a {
+  padding-block: 4px;
+}
+.footer-bottom {
+  padding-block: 24px;
+}
+
+@media (min-width: 761px) and (max-width: 1023px) {
+  .product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px 18px;
+  }
+  .signature-story {
+    min-height: 570px;
+    grid-template-columns: 1.1fr 1fr;
+  }
+  .signature-photograph {
+    min-height: 570px;
+  }
+  .signature-information {
+    padding: 45px 9%;
+  }
+  .signature-actions {
+    gap: 18px;
+  }
+  .catalog-toolbar {
+    gap: 16px;
+  }
+  .category-tabs {
+    gap: 18px;
+  }
+  .category-tabs button {
+    font-size: 12px;
+  }
+  .becoming-portrait {
+    height: 500px;
+  }
+  .closing-campaign,
+  .closing-photograph {
+    min-height: 480px;
+  }
+  .closing-copy {
+    padding: 50px 10%;
+  }
+}
+@media (max-width: 760px) {
+  .header-actions {
+    gap: 0;
+  }
+  .atelier-gallery {
+    padding: 64px 6% 52px;
+  }
+  .gallery-introduction h2 {
+    font-size: 38px;
+  }
+  .gallery-introduction > div > p {
+    margin-top: 22px;
+    font-size: 13px;
+    max-width: 320px;
+  }
+  .gallery-floor {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    margin-top: 40px;
+    column-gap: 4%;
+    row-gap: 32px;
+  }
+  .work-1 {
+    grid-column: 1/11;
+    grid-row: 1;
+    margin: 0;
+  }
+  .work-2 {
+    grid-column: 4/13;
+    grid-row: 2;
+    margin: 0;
+  }
+  .work-3 {
+    grid-column: 1/11;
+    grid-row: 3;
+    margin: 0;
+  }
+  .work-4 {
+    grid-column: 4/13;
+    grid-row: 4;
+    margin: 0;
+  }
+  .work-1 .gallery-work-image,
+  .work-4 .gallery-work-image {
+    aspect-ratio: 4/4.65;
+  }
+  .work-2 .gallery-work-image {
+    aspect-ratio: 3 / 4;
+  }
+  .work-3 .gallery-work-image {
+    aspect-ratio: 1;
+  }
+  .gallery-work-title {
+    margin-top: 15px;
+  }
+  .gallery-work-title h3 {
+    font-size: 29px;
+  }
+  .gallery-work-link > p {
+    font-size: 12px;
+    max-width: 250px;
+  }
+  .gallery-colophon {
+    margin-top: 32px;
+  }
+  .gallery-explore {
+    display: none;
+  }
+  .signature-story {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+  .signature-photograph {
+    min-height: 0;
+    aspect-ratio: 4/4.35;
+  }
+  .signature-image-caption {
+    left: 6%;
+    bottom: 22px;
+  }
+  .signature-information {
+    padding: 38px 7% 46px;
+  }
+  .signature-information h2 {
+    font-size: 42px;
+    margin-block: 18px;
+  }
+  .signature-description {
+    max-width: 340px;
+    font-size: 14px;
+  }
+  .signature-specifications {
+    margin-block: 26px 20px;
+  }
+  .signature-actions {
+    gap: 24px;
+  }
+  .signature-actions .button {
+    min-width: 145px;
+  }
+  .catalog.section-space {
+    padding: 58px 6% 64px;
+  }
+  .catalog .section-heading h2 {
+    font-size: 34px;
+  }
+  .catalog .section-heading {
+    gap: 19px;
+    margin-bottom: 24px;
+  }
+  .catalog-toolbar {
+    grid-template-columns: 1fr auto;
+    gap: 6px 16px;
+  }
+  .category-tabs {
+    grid-column: 1/-1;
+    gap: 14px;
+    width: 100%;
+  }
+  .category-tabs button {
+    font-size: 12px;
+    padding-block: 15px;
+  }
+  .sort-label {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+  }
+  .catalog-count {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 11px;
+  }
+  .sort-label select {
+    font-size: 11px;
+    padding: 10px 0;
+  }
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 13px;
+  }
+  .product-title {
+    display: block;
+    margin-top: 13px;
+  }
+  .product-title h3,
+  .product-card h3 {
+    font-size: 14px;
+  }
+  .product-title > span {
+    display: block;
+    margin-top: 3px;
+    font-size: 12px;
+  }
+  .product-card > p {
+    font-size: 10px;
+  }
+  .product-badge {
+    font-size: 9px;
+    left: 10px;
+    top: 10px;
+  }
+  .quick-view {
+    bottom: 8px;
+    right: 8px;
+    min-height: 44px;
+    padding: 7px 10px;
+    font-size: 11px;
+  }
+  .add-button {
+    font-size: 11px;
+    min-height: 44px;
+    padding-bottom: 9px;
+  }
+  .becoming-campaign {
+    padding: 42px 6% 46px;
+  }
+  .becoming-campaign-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .becoming-portrait {
+    height: auto;
+    aspect-ratio: 4/4.5;
+  }
+  .becoming-campaign-copy {
+    padding-top: 36px;
+  }
+  .becoming-campaign-copy h2 {
+    font-size: 40px;
+  }
+  .becoming-campaign-copy > p {
+    max-width: 320px;
+  }
+  .campaign-inset {
+    width: 42%;
+    margin-top: -36px;
+    pointer-events: none;
+  }
+  .becoming-campaign-copy .atelier-link {
+    max-width: 52%;
+  }
+  .atelier-craft {
+    padding: 48px 6% 46px;
+  }
+  .atelier-craft > h2 {
+    font-size: 36px;
+    margin-top: 22px;
+  }
+  .atelier-craft-layout {
+    margin-top: 28px;
+    gap: 34px;
+  }
+  .craft-macro > div {
+    aspect-ratio: 1;
+  }
+  .craft-pullquote {
+    font-size: 29px;
+  }
+  .craft-demo-note {
+    margin-top: 28px;
+  }
+  .care-banner {
+    padding-block: 35px;
+  }
+  .care-banner h2 {
+    font-size: 28px;
+  }
+  .faq {
+    padding: 45px 6%;
+    gap: 18px;
+  }
+  .faq h2 {
+    font-size: 33px;
+  }
+  .faq-list summary {
+    font-size: 13px;
+    padding-block: 20px;
+  }
+  .closing-campaign {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+  .closing-photograph {
+    min-height: 0;
+    aspect-ratio: 4/4.3;
+  }
+  .closing-copy {
+    padding: 38px 7% 44px;
+  }
+  .closing-copy h2 {
+    font-size: 44px;
+  }
+  .closing-copy > p:not(.editorial-label) {
+    max-width: 300px;
+  }
+  .atelier-footer {
+    padding-inline: 6%;
+  }
+  .footer-final-frame {
+    padding: 35px 0 32px;
+    margin-bottom: 30px;
+  }
+  .final-wordmark {
+    font-size: 18.4vw;
+    margin: 0 -1%;
+  }
+  .atelier-footer .newsletter h2 {
+    font-size: 30px;
+  }
+  .footer-top {
+    gap: 35px 24px;
+  }
+}
+@media (hover: none) {
+  .quick-view {
+    opacity: 1;
+    transform: none;
+  }
+  .gallery-detail {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .signature-photograph img,
+  .product-image img,
+  .gallery-detail {
+    transition: none;
+  }
+  .product-card:hover .product-image img {
+    transform: none;
+  }
+}

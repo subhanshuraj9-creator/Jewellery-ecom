@@ -1,0 +1,475 @@
+/* The uploaded film: one native scroll track, one local GSAP timeline. */
+.scroll-film {
+  height: 320svh;
+  position: relative;
+  background: #19130f;
+  color: #f4eee3;
+  --film-progress: 0;
+}
+.film-stage {
+  height: 100svh;
+  min-height: 560px;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  isolation: isolate;
+}
+.film-visual {
+  position: absolute;
+  inset: 0;
+}
+.film-visual video,
+.film-poster {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 48%;
+}
+.film-visual video {
+  opacity: 0;
+}
+.scroll-film:is([data-video-state="ready"], [data-video-state="buffering"])
+  video {
+  opacity: 1;
+}
+.film-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    0deg,
+    #18110fe8 0%,
+    #18110f7a 30%,
+    transparent 72%,
+    #18110f30
+  );
+  pointer-events: none;
+}
+.film-masthead {
+  position: absolute;
+  top: 135px;
+  left: 5.2%;
+  right: 5.2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.film-masthead > span:first-child {
+  opacity: 1;
+  visibility: visible;
+  font: 400 17px var(--serif);
+  letter-spacing: 0.28em;
+}
+.film-copy {
+  position: absolute;
+  left: 7%;
+  bottom: 16%;
+  max-width: 600px;
+}
+.film-label {
+  color: #d1b98b;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.film-copy h2,
+.film-statement {
+  font: 400 clamp(48px, 6.4vw, 92px)/1.05 var(--serif);
+  letter-spacing: -0.045em;
+  margin: 20px 0;
+}
+.film-copy em,
+.film-edit h2 em {
+  font-style: italic;
+  font-weight: 400;
+}
+.film-copy > p:not(.film-label):not(.film-statement) {
+  font-size: 13px;
+  color: #e1d5c3;
+  margin-top: 24px;
+}
+.film-link {
+  display: inline-flex;
+  gap: 35px;
+  align-items: center;
+  border-bottom: 1px solid #e4d1ac88;
+  padding: 14px 0;
+  font-size: 12px;
+  margin-top: 17px;
+  min-height: 44px;
+}
+.film-link:hover {
+  border-color: #f9e5be;
+}
+.film-copy-middle,
+.film-copy-final {
+  opacity: 0;
+  visibility: hidden;
+}
+.film-copy-middle {
+  left: auto;
+  right: 7%;
+  text-align: right;
+  bottom: 21%;
+}
+.film-copy-middle .film-statement {
+  font-size: clamp(42px, 4.8vw, 68px);
+}
+.film-copy-final .film-statement {
+  font-size: clamp(45px, 5vw, 75px);
+}
+.film-bottom {
+  position: absolute;
+  left: 5.2%;
+  right: 5.2%;
+  bottom: 27px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.film-scroll {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.film-scroll svg {
+  color: #d6bb87;
+}
+.film-status {
+  font-size: 9px;
+  color: #d9cab3;
+  text-align: center;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.film-status button {
+  background: transparent;
+  color: inherit;
+  border: 0;
+  min-height: 44px;
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  text-decoration: underline;
+}
+.film-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #f1e5d125;
+}
+.film-progress span {
+  display: block;
+  height: 100%;
+  background: #dac28e;
+  transform: scaleX(var(--film-progress));
+  transform-origin: left;
+}
+.scroll-film :is(a, button):focus-visible {
+  outline: 2px solid #f4d7a4;
+  outline-offset: 5px;
+}
+.film-edit {
+  position: relative;
+  height: 160svh;
+  color: #30271d;
+  background: #eee8dc;
+}
+.film-edit-stage {
+  height: 100svh;
+  min-height: 660px;
+  position: sticky;
+  top: 0;
+  padding: 55px 6% 28px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.5fr;
+  grid-template-rows: 1fr auto auto;
+  column-gap: 4%;
+  align-items: center;
+  overflow: hidden;
+}
+.film-edit .film-label {
+  color: #796443;
+}
+.film-edit h2 {
+  font: 400 clamp(34px, 3.5vw, 52px)/1.13 var(--serif);
+  letter-spacing: -0.04em;
+  margin: 22px 0;
+}
+.film-edit .text-link {
+  color: #5a4831;
+  margin-top: 17px;
+  font-size: 12px;
+}
+.film-jewellery-deck {
+  height: min(44vw, 460px);
+  position: relative;
+  align-self: center;
+}
+.film-jewellery-leaf {
+  position: absolute;
+  width: 39%;
+  height: 80%;
+  top: 10%;
+  background: #211c15;
+  border: 1px solid #b39b7344;
+  box-shadow: 0 16px 26px #382a1818;
+}
+.film-jewellery-leaf img {
+  object-fit: cover;
+}
+.film-jewellery-leaf > span {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: #e5d7b9;
+  font-size: 9px;
+}
+.film-jewellery-leaf.leaf-0 {
+  left: 0;
+  z-index: 1;
+}
+.film-jewellery-leaf.leaf-1 {
+  left: 30.5%;
+  z-index: 3;
+}
+.film-jewellery-leaf.leaf-2 {
+  left: 61%;
+  z-index: 2;
+}
+.film-edit-shopping {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+  border-top: 1px solid #9d886b4d;
+  margin-top: 25px;
+}
+.film-edit-shopping > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0 14px;
+  gap: 10px;
+}
+.film-edit-shopping a {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.film-edit-shopping a > span {
+  font: 400 21px var(--serif);
+}
+.film-edit-shopping small {
+  font-size: 11px;
+  color: #6b593f;
+}
+.film-edit-shopping button {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #a48a63;
+  border-radius: 50%;
+  color: #5d472a;
+  background: none;
+}
+.film-edit-shopping button:hover {
+  background: #e0d3bd;
+}
+.film-edit-note {
+  grid-column: 1/-1;
+  font-size: 9px;
+  color: #77674e;
+  margin-top: 18px;
+}
+.film-edit :is(a, button):focus-visible {
+  outline: 2px solid #80602c;
+  outline-offset: 4px;
+}
+@media (max-width: 1023px) {
+  .film-edit-stage {
+    grid-template-columns: 0.95fr 1.2fr;
+    padding-inline: 5%;
+  }
+  .film-edit-shopping {
+    gap: 23px;
+  }
+  .film-edit-shopping a > span {
+    font-size: 19px;
+  }
+}
+@media (max-width: 760px) {
+  .scroll-film {
+    height: 210svh;
+  }
+  .film-stage {
+    min-height: 580px;
+  }
+  .film-visual {
+    inset: 15% 0 auto;
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+  .film-visual video,
+  .film-poster {
+    object-fit: contain;
+    object-position: center;
+  }
+  .film-shade {
+    background: linear-gradient(
+      0deg,
+      #19130f 5%,
+      #19130f99 22%,
+      transparent 58%
+    );
+  }
+  .film-masthead {
+    top: 107px;
+    left: 6%;
+    right: 6%;
+  }
+  .film-masthead > span:first-child {
+    font-size: 15px;
+  }
+  .film-copy,
+  .film-copy-middle {
+    left: 7%;
+    right: 7%;
+    text-align: left;
+    bottom: 14%;
+  }
+  .film-copy h2 {
+    font-size: clamp(43px, 12vw, 64px);
+    margin-block: 15px;
+  }
+  .film-copy .film-statement {
+    font-size: clamp(37px, 10vw, 56px);
+  }
+  .film-copy > p:not(.film-label):not(.film-statement) {
+    font-size: 11px;
+    margin-top: 15px;
+  }
+  .film-label {
+    font-size: 9px;
+  }
+  .film-link {
+    font-size: 11px;
+    margin-top: 10px;
+  }
+  .film-bottom {
+    bottom: 15px;
+    left: 7%;
+    right: 7%;
+    gap: 12px;
+  }
+  .film-scroll {
+    font-size: 8px;
+    gap: 9px;
+  }
+  .film-status {
+    position: absolute;
+    left: 0;
+    top: -20px;
+    font-size: 8px;
+  }
+  .film-edit {
+    height: 145svh;
+  }
+  .film-edit-stage {
+    min-height: 710px;
+    padding: 38px 7% 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  .film-edit h2 {
+    font-size: 31px;
+    margin: 14px 0 0;
+  }
+  .film-edit-heading .text-link {
+    margin-top: 9px;
+    font-size: 10px;
+  }
+  .film-jewellery-deck {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    min-height: 245px;
+    max-height: 320px;
+    margin-block: 18px;
+  }
+  .film-jewellery-leaf {
+    height: 83%;
+  }
+  .film-edit-shopping {
+    gap: 12px;
+    margin-top: 13px;
+  }
+  .film-edit-shopping > div {
+    position: relative;
+    display: block;
+    padding: 18px 0 0;
+  }
+  .film-edit-shopping a > span {
+    font-family: var(--sans);
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .film-edit-shopping small {
+    font-size: 9px;
+  }
+  .film-edit-shopping button {
+    width: 38px;
+    height: 38px;
+    margin-top: 12px;
+  }
+  .film-edit-note {
+    font-size: 8px;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 760px) and (min-height: 760px) {
+  .film-visual {
+    top: 22%;
+  }
+  .film-masthead {
+    top: calc(22% - 40px);
+  }
+  .film-copy,
+  .film-copy-middle {
+    bottom: 18%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scroll-film,
+  .film-edit {
+    height: auto;
+  }
+  .film-stage,
+  .film-edit-stage {
+    position: relative;
+  }
+  .film-copy-intro {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+  .film-copy-middle,
+  .film-copy-final {
+    display: none;
+  }
+  .film-progress {
+    display: none;
+  }
+}

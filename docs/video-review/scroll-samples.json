@@ -1,0 +1,46 @@
+[
+  {
+    "paused": true,
+    "progress": "0.361",
+    "state": "ready",
+    "time": 3.583333,
+    "y": 560
+  },
+  {
+    "paused": true,
+    "progress": "0.741",
+    "state": "ready",
+    "time": 7.375,
+    "y": 1120
+  },
+  {
+    "paused": true,
+    "progress": "0.361",
+    "state": "ready",
+    "time": 3.583333,
+    "y": 560
+  },
+  {
+    "paused": true,
+    "progress": "0.823",
+    "state": "ready",
+    "time": 8.208333,
+    "y": 1240
+  },
+  {
+    "paused": true,
+    "progress": "0.739",
+    "state": "ready",
+    "time": 7.375,
+    "viewport": "mobile",
+    "y": 713.5999755859375
+  },
+  {
+    "paused": true,
+    "progress": "0.378",
+    "state": "ready",
+    "time": 3.75,
+    "viewport": "mobile return / retry",
+    "y": 379.2000122070313
+  }
+]

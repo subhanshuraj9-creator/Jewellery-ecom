@@ -1,0 +1,94 @@
+{
+  "opening": {
+    "height": 2672,
+    "heroTop": 30,
+    "macro": null,
+    "portrait": {
+      "height": "668px",
+      "origin": "271.041px 473.612px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "width": "501px"
+    },
+    "viewport": [
+      870,
+      668
+    ],
+    "y": 0
+  },
+  "middle": {
+    "height": 2672,
+    "heroTop": -1306,
+    "macro": {
+      "opacity": "0",
+      "transform": "none"
+    },
+    "portrait": {
+      "height": "668px",
+      "origin": "271.041px 473.612px",
+      "transform": "matrix(8.17662, 0, 0, 8.17662, -181.819, -126.799)",
+      "width": "501px"
+    },
+    "viewport": [
+      870,
+      668
+    ],
+    "y": 1336
+  },
+  "macro": {
+    "height": 2672,
+    "heroTop": -1974,
+    "macro": {
+      "opacity": "1",
+      "transform": "matrix(1.49854, 0, 0, 1.49854, 0, 0)"
+    },
+    "portrait": {
+      "height": "668px",
+      "origin": "271.041px 473.612px",
+      "transform": "matrix(9.73965, 0, 0, 9.73965, -200.192, -139.612)",
+      "width": "501px"
+    },
+    "viewport": [
+      870,
+      668
+    ],
+    "y": 2004
+  },
+  "reverse": {
+    "height": 2672,
+    "heroTop": -1306,
+    "macro": {
+      "opacity": "0",
+      "transform": "none"
+    },
+    "portrait": {
+      "height": "668px",
+      "origin": "271.041px 473.612px",
+      "transform": "matrix(8.17662, 0, 0, 8.17662, -181.819, -126.799)",
+      "width": "501px"
+    },
+    "viewport": [
+      870,
+      668
+    ],
+    "y": 1336
+  },
+  "originalMiddle": {
+    "height": 2672,
+    "heroTop": -1306,
+    "macro": {
+      "opacity": "0",
+      "transform": "none"
+    },
+    "portrait": {
+      "height": "668px",
+      "origin": "271.041px 473.612px",
+      "transform": "matrix(8.17662, 0, 0, 8.17662, -181.819, -126.799)",
+      "width": "501px"
+    },
+    "viewport": [
+      870,
+      668
+    ],
+    "y": 1336
+  }
+}

@@ -1,0 +1,412 @@
+/* A restrained editorial type system: Georgia display, locally hosted DM Sans UI. */
+:root {
+  --muted: #64645f;
+}
+body {
+  font-size: 15px;
+  line-height: 1.65;
+}
+h1,
+h2 {
+  letter-spacing: -0.035em;
+  line-height: 1.12;
+}
+h3 {
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+}
+em {
+  font-style: normal;
+}
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+}
+.button,
+.text-link,
+.text-button,
+.muse-cta,
+.atelier-link {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.announcement {
+  font-size: 11px;
+  letter-spacing: 0.01em;
+}
+.desktop-nav {
+  font-size: 13px;
+}
+.wordmark {
+  font-size: 30px;
+  letter-spacing: 0.15em;
+}
+.wordmark span {
+  font-size: 8px;
+  letter-spacing: 0.14em;
+}
+.muse-copy {
+  width: 49%;
+}
+.muse-copy h1 {
+  font-size: clamp(45px, 5.1vw, 88px);
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+  margin: 25px 0;
+}
+.muse-copy > .eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+.muse-intro {
+  max-width: 330px;
+  font-size: 14px;
+  line-height: 1.75;
+  color: #d4d2cb;
+}
+.muse-opening-caption {
+  font-size: 9px;
+  letter-spacing: 0.1em;
+}
+.muse-detail-caption p {
+  font-size: clamp(38px, 4.4vw, 68px);
+  line-height: 1.12;
+}
+.gallery-introduction > .eyebrow,
+.craft-topline .eyebrow {
+  font-size: 11px;
+}
+.gallery-introduction h2,
+.atelier-craft > h2 {
+  font-size: clamp(42px, 4.8vw, 76px);
+  line-height: 1.13;
+}
+.gallery-introduction > div > p {
+  font-size: 14px;
+  max-width: 280px;
+  line-height: 1.8;
+}
+.gallery-work-title h3 {
+  font-size: clamp(27px, 3vw, 45px);
+}
+.gallery-work-link > p {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+.gallery-explore {
+  font-size: 11px;
+}
+.gallery-colophon {
+  justify-content: flex-end;
+}
+.section-heading h2,
+.catalog .section-heading h2,
+.care-banner h2,
+.faq h2,
+.newsletter h2 {
+  font-size: clamp(30px, 3.5vw, 48px);
+  line-height: 1.18;
+}
+.becoming-campaign-copy h2 {
+  font-size: clamp(43px, 5.8vw, 86px);
+  line-height: 1.08;
+}
+.becoming-campaign-copy > p,
+.atelier-craft-story > p:not(.craft-pullquote),
+.material-notes p,
+.care-banner p:not(.eyebrow),
+.faq-list p,
+.newsletter > p:not(.eyebrow) {
+  font-size: 14px;
+  line-height: 1.85;
+}
+.craft-pullquote {
+  font-size: clamp(28px, 3vw, 43px);
+  line-height: 1.3;
+}
+.material-notes h3 {
+  font-size: 25px;
+  line-height: 1.3;
+}
+.craft-macro figcaption,
+.craft-detail figcaption,
+.craft-demo-note {
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  line-height: 1.6;
+}
+.category-tabs button,
+.sort-label select {
+  font-size: 13px;
+}
+.product-title h3,
+.product-title > span,
+.product-card h3 {
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.5;
+}
+.product-title > span {
+  font-size: 14px;
+  font-weight: 400;
+}
+.product-material,
+.add-button,
+.product-card > p {
+  font-size: 12px;
+  line-height: 1.6;
+}
+.product-badge {
+  font-size: 9px;
+  letter-spacing: 0.08em;
+}
+.product-information h1,
+.collection-page-intro h1,
+.checkout-page > h1,
+.about-page h1 {
+  font-size: clamp(36px, 4.5vw, 62px);
+  line-height: 1.15;
+}
+.product-information .eyebrow,
+.breadcrumbs,
+.fit-note,
+.fine-print,
+.concept-note,
+.finish-selector small {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.detail-description,
+.detail-accordions p,
+.quick-view-content p,
+.about-page > p,
+.checkout-page > p,
+.demo-checkout-note p {
+  font-size: 15px;
+  line-height: 1.8;
+}
+.detail-price {
+  font-family: var(--sans);
+  font-size: 23px;
+}
+.detail-accordions summary,
+.faq-list summary,
+.finish-selector,
+.fit-options {
+  font-size: 14px;
+}
+.collection-page-intro > p:not(.eyebrow) {
+  font-size: 15px;
+  max-width: 580px;
+  margin-inline: auto;
+}
+.footer-column h3 {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+}
+.footer-column a,
+.newsletter input,
+.footer-bottom {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.newsletter small {
+  font-size: 11px;
+}
+.modal-heading h2 {
+  font-size: 30px;
+  line-height: 1.2;
+}
+.cart-item-info > a {
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 500;
+}
+.cart-item-info p,
+.cart-item-end,
+.bag-notice,
+.gift-note,
+.search-results small {
+  font-size: 12px;
+}
+.empty-state h3 {
+  font-size: 30px;
+  line-height: 1.25;
+}
+.empty-state p {
+  font-size: 14px;
+}
+.gallery-work-title {
+  margin-top: 22px;
+}
+.catalog .section-heading .eyebrow,
+.campaign-margin > .eyebrow {
+  font-size: 11px;
+}
+.quick-view {
+  font-size: 10px;
+}
+.quick-view-content > div > p:not(.eyebrow):not(.quick-view-price) {
+  font-size: 14px;
+}
+.product-options legend,
+.product-options button,
+.detail-accordions summary {
+  font-size: 13px;
+}
+.fit-option-note,
+.inspection-note,
+.product-perks,
+.detail-price > span {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.search-input input {
+  font-size: 16px;
+}
+.search-results .serif {
+  font-family: var(--sans);
+  font-size: 16px;
+}
+.search-results small,
+.mobile-menu-note {
+  font-size: 12px;
+}
+.becoming-campaign {
+  padding-bottom: 70px;
+}
+.newsletter .eyebrow {
+  font-size: 11px;
+}
+.care-banner .eyebrow,
+.faq .eyebrow {
+  font-size: 11px;
+}
+.faq .faq-list details > p {
+  font-size: 14px;
+  line-height: 1.85;
+}
+@media (max-width: 760px) {
+  .wordmark {
+    font-size: 25px;
+  }
+  .wordmark span {
+    font-size: 7px;
+  }
+  .announcement {
+    font-size: 10px;
+  }
+  .muse-copy {
+    width: 88%;
+    bottom: 11svh;
+  }
+  .muse-copy h1 {
+    font-size: clamp(37px, 9.5vw, 65px);
+    line-height: 1.1;
+    margin: 18px 0;
+  }
+  .muse-copy > .eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.1em;
+  }
+  .muse-intro {
+    font-size: 13px;
+    max-width: 330px;
+    line-height: 1.65;
+  }
+  .gallery-introduction h2,
+  .atelier-craft > h2 {
+    font-size: clamp(36px, 9vw, 54px);
+  }
+  .gallery-introduction > div > p {
+    max-width: 100%;
+  }
+  .gallery-work-title h3 {
+    font-size: 29px;
+  }
+  .gallery-work-link > p {
+    font-size: 12px;
+  }
+  .gallery-work-title {
+    gap: 10px;
+  }
+  .becoming-campaign-copy h2 {
+    font-size: 45px;
+  }
+  .section-heading h2,
+  .catalog .section-heading h2,
+  .care-banner h2,
+  .faq h2,
+  .newsletter h2 {
+    font-size: 31px;
+  }
+  .section-heading {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .product-card h3 {
+    font-size: 14px;
+  }
+  .product-title {
+    align-items: flex-start;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  .product-title > span {
+    font-size: 13px;
+  }
+  .product-card > p {
+    font-size: 11px;
+  }
+  .category-tabs button,
+  .sort-label select {
+    font-size: 12px;
+  }
+  .craft-pullquote {
+    font-size: 30px;
+  }
+  .material-notes h3 {
+    font-size: 23px;
+  }
+  .gallery-colophon .text-link {
+    white-space: normal;
+  }
+  .care-banner {
+    display: grid;
+    grid-template-columns: 24px minmax(0, 1fr);
+    gap: 20px 16px;
+    align-items: start;
+    padding: 40px 6%;
+  }
+  .care-banner > div {
+    min-width: 0;
+  }
+  .care-banner > svg {
+    width: 24px;
+    margin-top: 3px;
+  }
+  .care-banner h2 {
+    margin: 12px 0 18px;
+  }
+  .care-banner .text-link {
+    grid-column: 2;
+    margin: 0;
+    justify-self: start;
+  }
+  .footer-bottom {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .newsletter input {
+    font-size: 16px;
+  }
+  .checkout-page h1 {
+    font-size: 36px;
+  }
+}

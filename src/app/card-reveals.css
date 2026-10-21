@@ -1,0 +1,257 @@
+/* Shared scroll reveals, confined to shopping cards outside the approved heroes. */
+.scroll-card {
+  min-width: 0;
+  perspective: 1200px;
+}
+.scroll-card-plane {
+  transform-origin: 50% 80%;
+}
+.scroll-card:focus-within .scroll-card-plane {
+  transform: none !important;
+  clip-path: none !important;
+}
+
+/* Collection flashcards: one photograph and a readable, tangible paper frame. */
+.flashcard-gallery .gallery-floor {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  align-items: start;
+  padding-bottom: 16px;
+}
+.flashcard-gallery .gallery-floor .gallery-work {
+  padding: 0;
+}
+.flashcard-gallery .gallery-floor .work-2,
+.flashcard-gallery .gallery-floor .work-4 {
+  padding-top: 28px;
+}
+.flashcard-gallery .gallery-work-link {
+  display: block;
+  background: #e9e2d5;
+  color: #2c241c;
+  border: 1px solid #ccbda0;
+  padding: 10px 10px 18px;
+  box-shadow: 0 12px 24px #00000020;
+  transform: none;
+}
+.flashcard-gallery .gallery-work-image {
+  margin: 0;
+  overflow: hidden;
+}
+.flashcard-gallery .gallery-image-plane {
+  transform: none;
+}
+.flashcard-gallery .gallery-work-title {
+  padding: 0 7px;
+  margin-top: 18px;
+}
+.flashcard-gallery .gallery-work-title h3 {
+  color: #2c241c;
+  font-size: clamp(23px, 2.1vw, 30px);
+}
+.flashcard-gallery .gallery-work-title > svg {
+  color: #806744;
+}
+.flashcard-gallery .gallery-work-link > p {
+  padding: 0 7px;
+  margin-top: 8px;
+  color: #695b49;
+  font-size: 11px;
+  line-height: 1.7;
+  min-height: 3.4em;
+}
+.flashcard-gallery .gallery-work-link:focus-visible {
+  outline: 2px solid #ddc498;
+  outline-offset: 5px;
+}
+
+/* Preserve the editorial rhythm while the whole product card reveals. */
+.featured-edit .product-grid > .scroll-card:nth-child(2) {
+  padding-top: 26px;
+}
+.featured-edit .product-grid > .scroll-card:nth-child(4) {
+  padding-top: 48px;
+}
+.featured-edit .product-grid {
+  padding-bottom: 30px;
+}
+
+/* The model is physically in the left column; the copy has its own right column. */
+.closing-campaign {
+  display: grid;
+  grid-template-columns: 56% 44%;
+  min-height: 530px;
+}
+.closing-photograph {
+  position: relative;
+  inset: auto;
+  width: 100%;
+  min-height: 530px;
+  overflow: hidden;
+}
+.closing-photograph > div {
+  position: absolute;
+  inset: -4% 0;
+}
+.closing-photograph img {
+  object-fit: cover;
+  object-position: 82% 42%;
+}
+.closing-copy {
+  width: auto;
+  margin: 0;
+  align-self: center;
+  padding: 65px clamp(30px, 5vw, 76px);
+  background: transparent;
+}
+.closing-copy h2 {
+  font-size: clamp(35px, 3.9vw, 59px);
+}
+.closing-copy > p:not(.editorial-label) {
+  max-width: 310px;
+}
+
+/* Keep native horizontal scrolling and existing carousel buttons. */
+.lookbook-track {
+  padding-top: 22px;
+  padding-bottom: 64px;
+  margin-top: -8px;
+  margin-bottom: -42px;
+}
+.lookbook-scroll-card {
+  flex: 0 0 calc((100% - 48px) / 4);
+  scroll-snap-align: start;
+}
+.lookbook-scroll-card .lookbook-frame {
+  display: block;
+  width: 100%;
+}
+.lookbook-controls {
+  position: relative;
+}
+@media (min-width: 761px) and (max-width: 1023px) {
+  .flashcard-gallery .gallery-floor {
+    gap: 16px;
+  }
+  .flashcard-gallery .gallery-work-link {
+    padding: 8px 8px 16px;
+  }
+  .flashcard-gallery .gallery-work-title {
+    padding: 0 4px;
+  }
+  .flashcard-gallery .gallery-work-title h3 {
+    font-size: 23px;
+  }
+  .flashcard-gallery .gallery-work-link > p {
+    padding: 0 4px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 760px) {
+  .flashcard-gallery .gallery-floor {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px 16px;
+  }
+  .flashcard-gallery .gallery-floor .gallery-work {
+    padding: 0;
+  }
+  .flashcard-gallery .gallery-floor .work-2,
+  .flashcard-gallery .gallery-floor .work-4 {
+    padding-top: 24px;
+  }
+  .flashcard-gallery .gallery-work-link {
+    padding: 7px 7px 15px;
+  }
+  .flashcard-gallery .gallery-work-title {
+    padding: 0 4px;
+    margin-top: 14px;
+  }
+  .flashcard-gallery .gallery-work-title h3 {
+    font-size: 22px;
+  }
+  .flashcard-gallery .gallery-work-link > p {
+    font-size: 10px;
+    padding: 0 4px;
+    min-height: 5.1em;
+  }
+  .flashcard-gallery .gallery-work-title > svg {
+    width: 14px;
+  }
+  .featured-edit .product-grid > .scroll-card:nth-child(2),
+  .featured-edit .product-grid > .scroll-card:nth-child(4) {
+    padding-top: 24px;
+  }
+  .closing-campaign {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+  .closing-photograph {
+    min-height: 370px;
+    aspect-ratio: 1/1;
+  }
+  .closing-photograph > div {
+    inset: -4% 0;
+  }
+  .closing-photograph img {
+    object-position: 82% 40%;
+  }
+  .closing-copy {
+    width: 100%;
+    margin: 0;
+    padding: 36px 7% 44px;
+  }
+  .closing-copy h2 {
+    font-size: 39px;
+  }
+  .lookbook-scroll-card {
+    flex-basis: 68%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scroll-card-plane {
+    transform: none !important;
+    clip-path: none !important;
+  }
+}
+@media (scripting: none) {
+  .scroll-card-plane {
+    transform: none !important;
+    clip-path: none !important;
+  }
+}
+
+/* Navigation arrives at the film's release point, independent of video seeking. */
+body:has(.scroll-film) .header {
+  position: fixed;
+  top: 0;
+  background: #100e0bf5;
+  border-bottom-color: #e6d4b326;
+  z-index: 30;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-12px);
+  transition:
+    opacity 320ms ease,
+    transform 320ms ease,
+    visibility 320ms;
+}
+body:has(.scroll-film) .header[data-film-released="true"] {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body:has(.scroll-film) .header {
+    transition: none;
+  }
+}
+@media (scripting: none) {
+  body:has(.scroll-film) .header {
+    position: absolute;
+    top: 30px;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+}

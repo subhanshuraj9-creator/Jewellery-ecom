@@ -1,0 +1,28 @@
+{
+  "source": "gemini_generated_video_72697223-clean.mp4",
+  "sourceSha256": "78e9a1d0be3fd0389538e81a81674f67be135b31e78b5e15848d6a7db2e0d909",
+  "sourceVideo": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "seconds": 10,
+    "note": "Measured from the supplied AURELLE clip; recheck this and FILM_FPS when replacing the source."
+  },
+  "outputs": [
+    {
+      "file": "aurelle-film-desktop.mp4",
+      "bytes": 3264141,
+      "sha256": "d9d744281b05b7312697134924fb9f2d7cacc3ac980e28838cb5c642726c8d48"
+    },
+    {
+      "file": "aurelle-film-mobile.mp4",
+      "bytes": 1921511,
+      "sha256": "4480bcaa54cb454355b835703ca25cecedcd22f12a8d156d63c713e81b0f2c8f"
+    },
+    {
+      "file": "aurelle-film-poster.webp",
+      "bytes": 26180,
+      "sha256": "57da23d9471a895cc42bd8e44ef2e0a4ac5eeaab4ef5736ea8ec3ee462f6568c"
+    }
+  ]
+}

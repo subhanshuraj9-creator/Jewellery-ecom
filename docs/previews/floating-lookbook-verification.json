@@ -1,0 +1,65 @@
+[
+  {
+    "cards": [
+      {
+        "active": "true",
+        "opacity": "1",
+        "transform": "translate3d(0%, 0px, 0px) rotateX(0deg) rotateZ(0deg) scale(1)"
+      },
+      {
+        "active": "false",
+        "opacity": "1",
+        "transform": "translate3d(6%, 11px, -45px) rotateX(2deg) rotateZ(3.3deg) scale(0.965)"
+      },
+      {
+        "active": "false",
+        "opacity": "1",
+        "transform": "translate3d(12%, 22px, -90px) rotateX(4deg) rotateZ(-5.4deg) scale(0.93)"
+      }
+    ],
+    "state": "start",
+    "y": 8231.2001953125
+  },
+  {
+    "cards": [
+      {
+        "active": "false",
+        "opacity": "0",
+        "transform": "translate3d(-98%, -72px, 60px) rotateX(-5deg) rotateZ(-16deg) scale(1)"
+      },
+      {
+        "active": "false",
+        "opacity": "0.29053",
+        "transform": "translate3d(-66.7699%, -49.0554px, 40.8795px) rotateX(-3.40663deg) rotateZ(-10.9012deg) scale(1)"
+      },
+      {
+        "active": "true",
+        "opacity": "1",
+        "transform": "translate3d(2.25967%, 4.14273px, -16.9475px) rotateX(0.753224deg) rotateZ(-1.01685deg) scale(0.986819)"
+      }
+    ],
+    "state": "down",
+    "y": 8791.2001953125
+  },
+  {
+    "cards": [
+      {
+        "active": "true",
+        "opacity": "1",
+        "transform": "translate3d(0%, 0px, 0px) rotateX(0deg) rotateZ(0deg) scale(1)"
+      },
+      {
+        "active": "false",
+        "opacity": "1",
+        "transform": "translate3d(6%, 11px, -45px) rotateX(2deg) rotateZ(3.3deg) scale(0.965)"
+      },
+      {
+        "active": "false",
+        "opacity": "1",
+        "transform": "translate3d(12%, 22px, -90px) rotateX(4deg) rotateZ(-5.4deg) scale(0.93)"
+      }
+    ],
+    "state": "reverse",
+    "y": 7822.39990234375
+  }
+]

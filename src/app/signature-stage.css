@@ -1,0 +1,358 @@
+/* A limestone studio between the protected photographic opening and the collection. */
+.signature-stage {
+  --ink: #30271d;
+  --muted: #736653;
+  --gold: #8b6b37;
+  --line: #a8916a45;
+  position: relative;
+  padding: 36px 5.2% 58px;
+  background: #f0ece3;
+  color: var(--ink);
+  color-scheme: light;
+  border-bottom: 1px solid #a8916a45;
+}
+.signature-stage-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--line);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: #6f5f48;
+}
+.signature-stage-layout {
+  display: grid;
+  grid-template-columns: 0.82fr 1.3fr;
+  gap: 6%;
+  align-items: center;
+  margin-top: 32px;
+}
+.signature-stage-copy {
+  padding: 20px 0 20px 4%;
+}
+.signature-stage .editorial-label {
+  color: #8b6b37;
+  font-size: 10px;
+}
+.signature-stage h2 {
+  font: 400 clamp(42px, 4.4vw, 67px)/1.05 var(--serif);
+  letter-spacing: -0.045em;
+  margin: 26px 0;
+}
+.signature-stage-intro {
+  max-width: 310px;
+  font-size: 13px;
+  color: #736653;
+  line-height: 1.85;
+}
+.signature-stage-product {
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+  margin-top: 32px;
+  max-width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+.signature-stage-product h3 {
+  font: 400 26px/1.2 var(--serif);
+}
+.signature-stage-product > p {
+  font-size: 16px;
+  color: #58442b;
+}
+.signature-stage-product > p > span {
+  font-size: 9px;
+}
+.signature-stage-product small {
+  flex-basis: 100%;
+  color: #736653;
+  font-size: 10px;
+}
+.signature-stage-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 28px;
+}
+.signature-stage-actions .button {
+  background: #30271d;
+  color: #f5eee1;
+  border: 1px solid #30271d;
+  font-size: 12px;
+  min-height: 48px;
+  padding: 13px 20px;
+  gap: 34px;
+}
+.signature-stage-actions .button:hover {
+  background: #59462c;
+}
+.signature-stage-actions .text-link {
+  color: #59462c;
+  font-size: 12px;
+  gap: 19px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #9d8765;
+  min-height: 44px;
+  padding: 8px 0;
+}
+.signature-stage-note {
+  color: #736653;
+  font-size: 9px;
+  margin-top: 25px;
+}
+.signature-stage :is(a, button, [tabindex]):focus-visible {
+  outline: 2px solid #8b6b37;
+  outline-offset: 4px;
+}
+.signature-viewer-shell {
+  position: relative;
+  background: #e8e1d5;
+  border: 1px solid #b5a18240;
+}
+.signature-mode {
+  position: absolute;
+  z-index: 2;
+  right: 22px;
+  top: 20px;
+  display: flex;
+  gap: 15px;
+}
+.signature-mode button {
+  padding: 9px 0;
+  min-height: 40px;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  font-size: 10px;
+  color: #6f5d44;
+}
+.signature-mode button[aria-pressed="true"] {
+  color: #30271d;
+  border-color: #8b6b37;
+}
+.signature-viewer {
+  height: 520px;
+  position: relative;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.signature-viewer.is-dragging {
+  cursor: grabbing;
+}
+.signature-viewer canvas {
+  touch-action: pan-y !important;
+}
+.signature-canvas {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 450ms ease;
+}
+.signature-canvas.is-ready {
+  opacity: 1;
+}
+.signature-viewer-photo {
+  position: absolute;
+  inset: 12% 10%;
+  opacity: 1;
+  transition: opacity 450ms ease;
+  pointer-events: none;
+}
+.signature-viewer-photo.is-hidden {
+  opacity: 0;
+}
+.signature-viewer-photo img {
+  object-fit: contain;
+}
+.signature-viewer-tools {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  padding: 0 26px;
+  border-top: 1px solid #a8916a2b;
+}
+.signature-presets {
+  display: flex;
+  gap: 22px;
+}
+.signature-presets button {
+  min-height: 49px;
+  padding: 10px 0;
+  font-size: 11px;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  color: #6b5b43;
+}
+.signature-presets button[aria-pressed="true"] {
+  color: #30271d;
+  border-bottom-color: #8b6b37;
+}
+.signature-motion-controls {
+  display: flex;
+  gap: 6px;
+}
+.signature-motion-controls button {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 44px;
+  background: none;
+  border: 0;
+  color: #6f5a3b;
+}
+.signature-interaction-help {
+  font-size: 10px;
+  color: #6d5b42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  padding: 0 18px 20px;
+  min-height: 40px;
+  text-align: center;
+}
+
+/* Unequal image widths and a restrained offset establish an editorial rhythm. */
+@media (min-width: 761px) {
+  .gallery-floor {
+    grid-template-columns: 1.15fr 0.92fr 1.05fr 0.92fr;
+    align-items: start;
+  }
+  .gallery-floor .work-2 {
+    padding-top: 45px;
+  }
+  .gallery-floor .work-3 {
+    padding-top: 15px;
+  }
+  .gallery-floor .work-4 {
+    padding-top: 75px;
+  }
+  .featured-edit .product-grid {
+    grid-template-columns: 1.16fr 1fr 1fr 1fr;
+    align-items: start;
+  }
+  .featured-edit .product-card:nth-child(2) {
+    padding-top: 26px;
+  }
+  .featured-edit .product-card:nth-child(4) {
+    padding-top: 48px;
+  }
+}
+@media (min-width: 761px) and (max-width: 1023px) {
+  .signature-stage-layout {
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 4%;
+  }
+  .signature-stage-copy {
+    padding-left: 0;
+  }
+  .signature-stage h2 {
+    font-size: 46px;
+  }
+  .signature-viewer {
+    height: 470px;
+  }
+  .signature-stage-actions {
+    gap: 12px;
+  }
+  .signature-stage-actions .button {
+    gap: 22px;
+  }
+  .signature-stage-product h3 {
+    font-size: 24px;
+  }
+  .signature-presets {
+    gap: 16px;
+  }
+  .signature-viewer-tools {
+    padding-inline: 18px;
+    gap: 10px;
+  }
+}
+@media (max-width: 760px) {
+  .signature-stage {
+    padding: 26px 6% 35px;
+  }
+  .signature-stage-heading {
+    font-size: 9px;
+    gap: 25px;
+    padding-bottom: 19px;
+  }
+  .signature-stage-heading > span:last-child {
+    max-width: 140px;
+    text-align: right;
+  }
+  .signature-stage-layout {
+    grid-template-columns: 1fr;
+    gap: 31px;
+    margin-top: 24px;
+  }
+  .signature-stage-copy {
+    grid-row: 2;
+    padding: 0;
+  }
+  .signature-stage h2 {
+    font-size: 41px;
+    margin: 19px 0;
+  }
+  .signature-stage h2 br {
+    display: none;
+  }
+  .signature-stage-intro {
+    max-width: 340px;
+    font-size: 13px;
+  }
+  .signature-stage-product {
+    margin-top: 24px;
+    max-width: none;
+    padding-top: 20px;
+  }
+  .signature-stage-product h3 {
+    font-size: 26px;
+  }
+  .signature-stage-actions {
+    margin-top: 24px;
+    gap: 30px;
+  }
+  .signature-stage-note {
+    margin-top: 22px;
+  }
+  .signature-mode {
+    top: 13px;
+    right: 18px;
+  }
+  .signature-viewer {
+    height: 400px;
+  }
+  .signature-viewer-tools {
+    padding-inline: 19px;
+  }
+  .signature-interaction-help {
+    font-size: 9px;
+    padding-bottom: 17px;
+  }
+  .signature-presets {
+    gap: 22px;
+  }
+  .gallery-floor .work-2,
+  .gallery-floor .work-4 {
+    padding-top: 30px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .signature-canvas,
+  .signature-viewer-photo {
+    transition: none;
+  }
+}
